@@ -1,0 +1,832 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../plugins/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    position: relative;
+    padding: 0 100px;
+}
+
+.full-page {
+    min-height: 100vh;
+    height: max-content;
+}
+
+#village-nav {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-75%);
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10000;
+}
+
+.nav-box {
+    display: flex;
+    max-width: 50px;
+    padding-right: 32px;
+    align-items: center;
+    gap: 8px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .07);
+    transition: .3s;
+    color: rgb(100, 100, 100);
+}
+
+.nav-box:hover {
+    max-width: 250px;
+}
+
+.nav-box.active,
+.nav-box:hover {
+    background: rgb(50, 180, 50);
+    color: rgb(255, 255, 255);
+}
+
+.nav-box ion-icon {
+    padding: 14px;
+    padding-bottom: 9px;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-box span {
+    min-width: max-content;
+}
+
+#village-home {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    min-height: 90vh !important;
+}
+
+#village-home .img-bgr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#village-home .img-bgr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#village-home .white-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .75);
+}
+
+#village-home .content {
+    position: relative;
+    z-index: 10;
+    color: rgb(70, 60, 60);
+}
+
+#village-home h1 {
+    text-transform: uppercase;
+    font-size: 54px;
+}
+
+#village-home p {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#village-home p.desc {
+    max-width: 750px;
+    margin-top: 12px;
+    line-height: 28px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#village-home span {
+    color: rgb(50, 180, 50);
+}
+
+#village-home .village-socmed {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    gap: 12px;
+}
+
+#village-home .village-socmed a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#village-home .village-socmed a:hover {
+    color: rgb(50, 180, 50);
+
+    ion-icon {
+        color: rgb(50, 180, 50);
+    }
+
+}
+
+#village-home ion-icon {
+    width: 25px;
+    height: 25px;
+    color: rgb(100, 100, 100);
+}
+
+#village-about {
+    padding: 100px;
+    padding-top: 132px;
+    background: rgb(255, 255, 255);
+}
+
+.floating-header {
+    position: absolute;
+    display: flex;
+    top: -35px;
+    left: 50%;
+    padding: 24px 48px;
+    width: 75vw;
+    flex-wrap: wrap;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    gap: 24px;
+}
+
+.floating-header .data-box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.floating-header .label {
+    padding: 8px 16px;
+    background: rgb(50, 180, 50);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+.floating-header .value {
+    font-size: 24px;
+}
+
+.floating-header .value-numeric {
+    width: 64px;
+}
+
+#about-village-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 100px 32px;
+}
+
+.about-village-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about-village-box h3 {
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+}
+
+.about-village-box p {
+    padding-top: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+.about-village-box a {
+    color: rgb(50, 180, 50);
+}
+
+.about-village-box:nth-child(even) {
+    transform: translateY(-32px);
+}
+
+.reguler-village-header h2 {
+    font-weight: 500;
+}
+
+.reguler-village-header h2 span {
+    font-weight: 700;
+}
+
+#village-news {
+    padding-bottom: 125px;
+    background: rgb(255, 255, 255);
+}
+
+.news-container {
+    position: relative;
+    display: flex;
+    margin-top: 48px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.news-box {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.news-box:hover {
+    transform: translateY(-16px);
+}
+
+.news-box:first-child:hover {
+    transform: none;
+}
+
+.news-image {
+    position: relative;
+    height: 40vh;
+}
+
+.news-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-label {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    padding: 8px 16px;
+    background: rgb(50, 180, 50);
+    color: rgb(255, 255, 255);
+}
+
+.news-content {
+    padding: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+}
+
+#village-gallery {
+    padding-bottom: 100px;
+    background: rgb(255, 255, 255);
+}
+
+.center-header {
+    text-align: center;
+}
+
+.gallery-container {
+    position: relative;
+    display: flex;
+    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3px;
+}
+
+.gallery-box {
+    position: relative;
+    display: flex;
+    min-width: 500px;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.gallery-box:hover .gallery-image {
+    transform: scale(1.2);
+}
+
+.gallery-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    transition: .1s;
+}
+
+.gallery-box:hover .gallery-cover {
+    opacity: .2;
+}
+
+.gallery-box p {
+    position: absolute;
+    padding: 24px;
+    transition: .1s;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.gallery-box:hover p {
+    opacity: 0;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    padding: 64px 100px;
+    flex-wrap: wrap;
+    background: rgb(40, 40, 40);
+    gap: 32px;
+}
+
+footer label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+footer p {
+    line-height: 24px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
+
+footer ul {
+    margin-top: 32px;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(50, 180, 50);
+}
+
+footer ul li a ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-map iframe {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.footer-left {
+    max-width: 500px;
+}
+
+.footer-center {
+    margin-right: 32px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-right a {
+    color: rgb(150, 150, 150);
+}
+
+.village-anchor-fixer {
+    position: absolute;
+    top: -50px;
+}
+
+@media(max-width: 1181px) {
+    .about-village-box:nth-child(even) {
+        order: 3;
+    }
+
+    .floating-header .label {
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+
+    .floating-header .value {
+        font-size: 18px;
+    }
+
+    .floating-header .value-numeric {
+        width: 48px;
+    }
+
+    #village-home h1 {
+        font-size: 40px;
+    }
+
+    #village-home p {
+        font-size: 18px;
+    }
+
+    #village-home p.desc {
+        max-width: 650px;
+        margin-top: 8px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    #village-home .village-socmed {
+        margin-top: 18px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .welcome-text {
+        font-size: 32px;
+    }
+
+    .home .banner-image img {
+        width: 500px;
+        height: 450px;
+    }
+
+    .profile-h2 {
+        font-size: 32px;
+    }
+
+    .progress-bar {
+        width: 300px;
+    }
+}
+
+@media(max-width: 1050px) {
+    #profile-nav {
+        justify-content: flex-end;
+    }
+
+    #profile-nav .nav-link {
+        display: none;
+    }
+
+    #profile-header:target .label {
+        position: fixed;
+        top: 32px;
+        left: 24px;
+        z-index: 10000;
+    }
+
+    #profile-header:target .nav-link {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 250px;
+        height: 100%;
+        padding: 100px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgb(40, 40, 40);
+        border-right: 5px solid rgb(35, 35, 35);
+    }
+
+    #profile-header:target .nav-buttons-group {
+        position: fixed;
+        top: 350px;
+        left: 24px;
+        flex-direction: column;
+        align-items: stretch;
+        z-index: 10000;
+        gap: 8px;
+    }
+
+    #profile-header:target #profile-nav {
+        height: 36px;
+    }
+
+    #profile-header:target .nav-close {
+        position: fixed;
+        display: inline;
+        top: 20px;
+        left: 200px;
+        z-index: 10000;
+    }
+
+    .nav-toggle {
+        display: inline;
+    }
+
+    .home .banner-image img {
+        width: 400px;
+        height: 350px;
+    }
+
+    #village-home {
+        padding-left: 150px;
+    }
+
+    .floating-header {
+        width: 90vw;
+        padding: 24px;
+        gap: 18px;
+    }
+
+    .floating-header .data-box {
+        gap: 18px;
+    }
+}
+
+@media(max-width: 850px) {
+    .home.full-page {
+        gap: 0;
+    }
+
+    #village-nav {
+        transform: translateY(-100%);
+    }
+
+    #village-home {
+        min-height: 75vh !important;
+    }
+
+    #village-about {
+        padding: 100px 48px;
+    }
+
+    #about-village-container {
+        gap: 48px;
+    }
+}
+
+@media(max-width: 780px) {
+    .home.full-page {
+        padding-top: 125px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .profile-h2 {
+        font-size: 28px;
+    }
+
+    #village-home {
+        padding-left: 120px;
+    }
+
+    #village-home h1 {
+        font-size: 32px;
+    }
+
+    #village-home p {
+        font-size: 20px;
+    }
+
+    #village-home p.desc {
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+    #village-home a,
+    #village-home ion-icon {
+        font-size: 14px;
+    }
+
+    .about-village-box:first-child {
+        order: 2;
+    }
+
+    .about-village-box:last-child {
+        order: 3;
+    }
+
+    .about-village-box:nth-child(even) {
+        transform: translateY(0);
+        order: 1;
+    }
+}
+
+@media(max-width: 712px) {
+    .floating-header .data-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .floating-header .data-box .label {
+        padding: 2px 8px;
+    }
+
+    #village-about {
+        padding-top: 125px;
+        padding-bottom: 125px;
+    }
+}
+
+@media(max-width: 600px) {
+    #village-home {
+        padding-left: 100px;
+    }
+
+    .floating-header {
+        width: 100%;
+    }
+
+    .gallery-box {
+        min-width: 300px;
+    }
+
+    .gallery-box p {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 64px;
+    }
+
+    .edu-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-start-time {
+        border: none;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    .edu-end-time {
+        border: none;
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+    .edu-start-time,
+    .edu-end-time {
+        padding: 16px;
+    }
+
+    .page.about,
+    .page.project,
+    .page.pendidikan,
+    .page.pencapaian,
+    .page.kontak {
+        padding-top: 48px;
+    }
+
+    .page.kontak {
+        padding-bottom: 48px;
+    }
+}
+
+@media(max-width: 500px) {
+    .page {
+        padding: 0 48px;
+    }
+
+    .reguler-village-header h2 {
+        font-size: 32px;
+    }
+
+    .news-container,
+    .gallery-container {
+        margin-top: 24px;
+    }
+
+    .short-about {
+        font-size: 14px;
+    }
+
+    #profile-header,
+    .home.page,
+    .about.page,
+    .project.page,
+    .pendidikan.page,
+    .pencapaian.page,
+    .kontak.page {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .home .banner-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .profile-h2 {
+        font-size: 24px;
+    }
+
+    .profile-h2~p {
+        font-size: 14px;
+    }
+
+    .nav-buttons-group {
+        display: none;
+    }
+
+    #profile-header:target .nav-buttons-group {
+        display: flex;
+    }
+}
+
+@media(max-width: 450px) {
+    .page {
+        padding: 0 16px;
+    }
+
+    #village-nav {
+        flex-direction: row;
+        top: 64px;
+    }
+
+    #village-home {
+        min-height: 65vh !important;
+        padding-left: 32px;
+    }
+
+    footer {
+        padding: 32px;
+    }
+
+    .progress-bar {
+        width: 250px;
+        height: 5px;
+    }
+}
+
+@media(max-width: 350px) {
+
+    #profile-header,
+    .home.page,
+    .about.page,
+    .project.page,
+    .pendidikan.page,
+    .pencapaian.page,
+    .kontak.page {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home .banner-image img {
+        width: 250px;
+    }
+
+    .about ul {
+        list-style: none;
+    }
+}
