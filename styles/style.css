@@ -280,10 +280,6 @@ a {
     transform: translateY(-16px);
 }
 
-.news-box:first-child:hover {
-    transform: none;
-}
-
 .news-image {
     position: relative;
     height: 40vh;
@@ -459,6 +455,111 @@ footer ul li a ion-icon {
     top: -50px;
 }
 
+.structure {
+    margin-top: 24px;
+}
+
+.structure-row {
+    display: flex;
+    margin-top: 18px;
+    gap: 18px;
+}
+
+.structure-box {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .1);
+}
+
+.structure .label {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 12px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.structure ion-icon {
+    width: 18px !important;
+    height: 18px !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.structure .label.top {
+    background: rgb(225, 50, 50);
+}
+
+.structure .label.high {
+    background: rgb(200, 180, 25);
+}
+
+.structure .label.mid {
+    background: rgb(125, 200, 25);
+}
+
+.structure .label.low {
+    background: rgb(50, 180, 50);
+}
+
+.structure .entity {
+    padding: 8px 12px;
+    min-width: 225px;
+    background: rgb(255, 255, 255);
+}
+
+.mission {
+    min-width: 0;
+    max-width: 75vw;
+    text-align: left;
+}
+
+.mission h3 {
+    padding-bottom: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(40, 40, 40);
+}
+
+.mission h5 {
+    padding-top: 24px;
+    font-size: 14px;
+}
+
+.mission-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.mission-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.mission p {
+    padding-top: 8px;
+    text-align: justify;
+}
+
+@media(max-width: 1200px) {
+    .sotk-page {
+        padding-left: 125px !important;
+    }
+
+    .structure-row {
+        margin-top: 16px;
+        gap: 12px;
+    }
+
+    .structure .label {
+        font-size: 11px;
+    }
+
+    .structure .entity {
+        min-width: 180px;
+        font-size: 13px;
+    }
+}
+
 @media(max-width: 1181px) {
     .about-village-box:nth-child(even) {
         order: 3;
@@ -588,8 +689,24 @@ footer ul li a ion-icon {
         gap: 18px;
     }
 
+    .mission {
+        max-width: 90vw !important;
+    }
+
     .floating-header .data-box {
         gap: 18px;
+    }
+
+    .sotk-page {
+        padding-top: 72px;
+        padding-right: 32px;
+        padding-left: 100px !important;
+        align-items: flex-start !important;
+    }
+
+    .structure-row {
+        flex-wrap: wrap;
+        margin-top: 24px;
     }
 }
 
@@ -731,6 +848,11 @@ footer ul li a ion-icon {
     .page.kontak {
         padding-bottom: 48px;
     }
+
+    .sotk-page {
+        padding: 84px 24px 32px 100px !important;
+        min-height: max-content !important;
+    }
 }
 
 @media(max-width: 500px) {
@@ -782,6 +904,14 @@ footer ul li a ion-icon {
     #profile-header:target .nav-buttons-group {
         display: flex;
     }
+
+    .structure-box {
+        width: 100%;
+    }
+
+    .structure .entity {
+        min-width: 100% !important;
+    }
 }
 
 @media(max-width: 450px) {
@@ -799,13 +929,41 @@ footer ul li a ion-icon {
         padding-left: 32px;
     }
 
+    #village-home p.desc {
+        max-width: 325px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    #village-home a,
+    #village-home ion-icon {
+        font-size: 12px;
+    }
+
     footer {
         padding: 32px;
+    }
+
+    footer label {
+        font-size: 22px;
+    }
+
+    footer p {
+        line-height: 24px;
+        font-size: 12px;
+    }
+
+    footer a {
+        font-size: 10px;
     }
 
     .progress-bar {
         width: 250px;
         height: 5px;
+    }
+
+    .sotk-page {
+        padding-left: 24px !important;
     }
 }
 
