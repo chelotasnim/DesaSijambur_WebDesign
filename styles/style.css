@@ -183,6 +183,67 @@ a {
     gap: 24px;
 }
 
+.file-group {
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    padding: 24px 48px;
+    width: 75vw;
+    transform: translateX(-50%);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+.file-group .file-header {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.file-box {
+    display: flex;
+    padding: 18px 24px;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.file-title {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.file-data {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.file-data ion-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.file-action a {
+    display: block;
+    padding: 8px 24px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid rgb(50, 180, 50);
+    color: rgb(50, 180, 50);
+}
+
+.file-action a:first-child {
+    background: rgb(50, 180, 50);
+    color: rgb(255, 255, 255);
+}
+
 .floating-header .data-box {
     display: flex;
     align-items: center;
@@ -538,6 +599,10 @@ footer ul li a ion-icon {
 .mission p {
     padding-top: 8px;
     text-align: justify;
+}
+
+#village-home.page.ppid {
+    min-height: 75vh !important;
 }
 
 @media(max-width: 1200px) {
