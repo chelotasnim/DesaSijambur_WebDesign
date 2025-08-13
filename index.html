@@ -11,6 +11,11 @@
 
 <body>
     <nav id="village-nav">
+        <a id="nav-untoggle" href="#" class="nav-box">
+            <div class="nav-icon">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </a>
         <a href="#home" class="nav-box active">
             <div class="nav-icon">
                 <ion-icon name="apps-sharp"></ion-icon>
@@ -48,10 +53,20 @@
                 <ion-icon name="file-tray-full-outline"></ion-icon>
             </div>
             <span>
-                Info Publik
+                Laporan
             </span>
         </a>
     </nav>
+    <div class="logo-banner">
+        <img src="images/logo.png" alt="Logo" draggable="false">
+        <div class="logo-text">
+            <p>Desa Sijambur</p>
+            <span>Kabupaten Samosir</span>
+        </div>
+        <a id="nav-toggle" href="#village-nav">
+            <ion-icon name="grid-outline"></ion-icon>
+        </a>
+    </div>
     <section id="village-home" class="page full-page">
         <div id="home" class="village-anchor-fixer"></div>
         <div class="img-bgr">
@@ -168,26 +183,31 @@
                 <img src="images/kopi.jpeg" alt="Uji Skema OTKP 2023" class="gallery-image" draggable="false" />
                 <div class="gallery-cover"></div>
                 <p>PERKEBUNAN KOPI</p>
+                <span>"Sumber penghasilan utama warga Desa Sijambur"</span>
             </div>
             <div class="gallery-box">
                 <img src="images/jagung.jpeg" alt="Uji Skema OTKP 2023" class="gallery-image" draggable="false" />
                 <div class="gallery-cover"></div>
                 <p>PERKEBUNAN JAGUNG</p>
+                <span>"Ladang aktivitas petani jagung Desa Sijambur"</span>
             </div>
             <div class="gallery-box">
                 <img src="images/ubi.jpeg" alt="Uji Skema OTKP 2023" class="gallery-image" draggable="false" />
                 <div class="gallery-cover"></div>
                 <p>PERKEBUNAN UBI KAYU</p>
+                <span>"Lahan ubi kayu siap panen di Desa Sijambur"</span>
             </div>
             <div class="gallery-box">
                 <img src="images/danau.jpeg" alt="Uji Skema Multimedia 2023" class="gallery-image" draggable="false" />
                 <div class="gallery-cover"></div>
                 <p>WISATA DANAU SIDIHONI</p>
+                <span>"Wisata panorama alam unggulan di Desa Sijambur"</span>
             </div>
             <div class="gallery-box">
                 <img src="images/bukit.jpeg" alt="Smakensa Cup 2 2023" class="gallery-image" draggable="false" />
                 <div class="gallery-cover"></div>
                 <p>WISATA BUKIT GEREJA SIDIHONI</p>
+                <span>"Pemandangan bukit Gereja Sidihoni di Desa Sijambur"</span>
             </div>
         </div>
     </section>
@@ -209,13 +229,13 @@
                 <li>
                     <a target="_blank">
                         <ion-icon name="logo-whatsapp"></ion-icon>
-                        0813-5259-2670 (Kepala Desa)
+                        Two Boy Naibaho - +62 813-5259-2670 (Kepala Desa)
                     </a>
                 </li>
                 <li>
                     <a target="_blank">
                         <ion-icon name="logo-whatsapp"></ion-icon>
-                        0812-6511-4011 (Sekretaris Desa)
+                        Lamtua Naibaho - +62 812-6511-4011 (Sekretaris Desa)
                     </a>
                 </li>
                 <li>
@@ -233,6 +253,10 @@
             <a href="#gallery">Potensi</a>
         </div>
     </footer>
+    <a href="https://wa.me/6281352592670" target="_blank" class="customer-service">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+        Pengaduan
+    </a>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="scripts/script.js"></script>

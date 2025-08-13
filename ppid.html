@@ -11,6 +11,11 @@
 
 <body>
     <nav id="village-nav">
+        <a id="nav-untoggle" href="#" class="nav-box">
+            <div class="nav-icon">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </a>
         <a href="index.html" class="nav-box">
             <div class="nav-icon">
                 <ion-icon name="apps-sharp"></ion-icon>
@@ -19,7 +24,7 @@
                 Beranda
             </span>
         </a>
-        <a href="index.html#about" class="nav-box">
+        <a href="sotk.html" class="nav-box">
             <div class="nav-icon">
                 <ion-icon name="people-sharp"></ion-icon>
             </div>
@@ -32,10 +37,20 @@
                 <ion-icon name="file-tray-full-outline"></ion-icon>
             </div>
             <span>
-                Info Publik
+                Laporan
             </span>
         </a>
     </nav>
+    <div class="logo-banner">
+        <img src="images/logo.png" alt="Logo" draggable="false">
+        <div class="logo-text">
+            <p>Desa Sijambur</p>
+            <span>Kabupaten Samosir</span>
+        </div>
+        <a id="nav-toggle" href="#village-nav">
+            <ion-icon name="grid-outline"></ion-icon>
+        </a>
+    </div>
     <section id="village-home" class="page full-page ppid">
         <div id="home" class="village-anchor-fixer"></div>
         <div class="img-bgr">
@@ -51,10 +66,10 @@
             </p>
         </div>
     </section>
-    <section id="village-about" class="page">
+    <section id="village-about" class="page file-banner">
         <div id="about" class="village-anchor-fixer"></div>
         <header class="file-group">
-            <div class="file-header">Informasi Publik Terbaru</div>
+            <div class="file-header">Informasi Publik dan Laporan Terbaru</div>
             <div class="file-box">
                 <div class="file-content">
                     <div class="file-title">Daftar Penerima Bansos Pangan Bulog</div>
@@ -70,6 +85,23 @@
                 <div class="file-action">
                     <a href="docs/Data Bansos.pdf" download>Unduh Berkas</a>
                     <a href="docs/Data Bansos.pdf" target="_blank">Lihat Berkas</a>
+                </div>
+            </div>
+            <div class="file-box">
+                <div class="file-content">
+                    <div class="file-title">Data Pendapatan dan Pemasukan Desa 2023</div>
+                    <div class="file-data">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        Data dan Laporan Keuangan
+                    </div>
+                    <div class="file-data">
+                        <ion-icon name="calendar-number-outline"></ion-icon>
+                        Agustus 2023
+                    </div>
+                </div>
+                <div class="file-action">
+                    <a href="docs/Data Penduduk Dan Pendapatan Desa Sijambur .pdf" download>Unduh Berkas</a>
+                    <a href="docs/Data Penduduk Dan Pendapatan Desa Sijambur .pdf" target="_blank">Lihat Berkas</a>
                 </div>
             </div>
         </header>
@@ -92,13 +124,13 @@
                 <li>
                     <a target="_blank">
                         <ion-icon name="logo-whatsapp"></ion-icon>
-                        0813-5259-2670 (Kepala Desa)
+                        Two Boy Naibaho - +62 813-5259-2670 (Kepala Desa)
                     </a>
                 </li>
                 <li>
                     <a target="_blank">
                         <ion-icon name="logo-whatsapp"></ion-icon>
-                        0812-6511-4011 (Sekretaris Desa)
+                        Lamtua Naibaho - +62 812-6511-4011 (Sekretaris Desa)
                     </a>
                 </li>
                 <li>
@@ -116,6 +148,10 @@
             <a href="index.html#gallery">Potensi</a>
         </div>
     </footer>
+    <a href="https://wa.me/6281352592670" target="_blank" class="customer-service">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+        Pengaduan
+    </a>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="scripts/script.js"></script>
