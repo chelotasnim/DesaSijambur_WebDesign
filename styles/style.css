@@ -48,9 +48,8 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.customer-service ion-icon {
-    width: 18px;
-    height: 18px;
+.customer-service i {
+    font-size: 18px;
 }
 
 .logo-banner {
@@ -89,9 +88,8 @@ a {
     transform: translateY(-50%);
 }
 
-#nav-toggle ion-icon {
-    width: 24px;
-    height: 24px;
+#nav-toggle i {
+    font-size: 24px;
     color: rgb(255, 255, 255);
 }
 
@@ -138,11 +136,9 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.nav-box ion-icon {
+.nav-box i {
     padding: 14px;
-    padding-bottom: 9px;
-    width: 20px;
-    height: 20px;
+    font-size: 24px;
 }
 
 .nav-box span {
@@ -230,9 +226,8 @@ a {
 
 }
 
-#village-home ion-icon {
-    width: 25px;
-    height: 25px;
+#village-home i {
+    font-size: 24px;
     color: rgb(100, 100, 100);
 }
 
@@ -296,9 +291,8 @@ a {
     font-size: 14px;
 }
 
-.file-data ion-icon {
-    width: 18px;
-    height: 18px;
+.file-data i {
+    font-size: 18px;
 }
 
 .file-action a {
@@ -571,9 +565,8 @@ footer ul li a {
     color: rgb(150, 150, 150);
 }
 
-footer ul li a ion-icon {
-    width: 25px;
-    height: 25px;
+footer ul li a i {
+    font-size: 24px;
 }
 
 .footer-map iframe {
@@ -621,15 +614,14 @@ footer ul li a ion-icon {
 .structure .label {
     display: flex;
     align-items: center;
-    padding: 4px 12px;
-    gap: 12px;
+    padding: 4px 12px 5px;
+    gap: 8px;
     font-size: 14px;
     color: rgb(255, 255, 255);
 }
 
-.structure ion-icon {
-    width: 18px !important;
-    height: 18px !important;
+.structure i {
+    font-size: 18px !important;
     color: rgb(255, 255, 255) !important;
 }
 
